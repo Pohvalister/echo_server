@@ -15,7 +15,7 @@ private:
 
     int create_socket(uint16_t port);
     int create_epoll(int socket_fd);
-    int accept_new_client(int socket_fd, int epoll_fd);
+    void accept_new_client(int socket_fd, int epoll_fd);
     void handle_client(int client_fd);
 };
 
